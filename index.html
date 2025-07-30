@@ -3,87 +3,2210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <title>GASI</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="./images/galaxy.png">
+    <link rel="icon" type="image/x-icon" href="/images/galaxy.png">
     <script src="main.js" defer></script>
 </head>
 <body>
-    <header class="mobile-layout">
-        <div class="header-bar">
-            <button id="hamIcon">&#9776;</button>
-            <div class="header-logo">
-                <a href="#home" class="header-title">
-                    <img src="/images/galaxy.png" alt="GASI Logo">
-                </a> 
+    <div class="page-wrapper">
+        <header class="mobile-layout">
+            <div class="header-bar">
+                <button id="hamIcon">&#9776;</button>
+                <div class="header-logo">
+                    <a href="#home" class="header-title">
+                        <img src="/images/galaxy.png" alt="GASI Logo">
+                    </a> 
+                </div>
             </div>
-        </div>
-        <aside class="mobile-menu">
+            <aside class="mobile-menu">
+                <nav>
+                    <ul>
+                        <li class="header_nav_item"><button title="Home" id="homeBtn">Home</button></li>
+                        <li class="header_nav_item"><button title="Planets Overview" id="page1Btn">Planets Overview</button></li>
+                        <li class="header_nav_item"><button title="Fun Facts & Space Trivia" id="page2Btn">Fun Facts &amp; Space Trivia</button></li>
+                        <li class="header_nav_item"><button title="The Universe" id="page3Btn">The Universe</button></li>
+                        <li class="header_nav_item"><button title="Space Technology" id="page4Btn">Space Technology</button></li>
+                    </ul>
+                </nav>
+            </aside>
+        </header>
+        <header class ="desktop-layout">
+            <div class="header-bar">
+                <nav>
+                    <ul>
+                        <li class="header_nav_item"><button title="Home" id="desktop-homeBtn">Home</button></li>
+                        <li class="header_nav_item"><button title="Planets Overview" id="desktop-page1Btn">Planets Overview</button></li>
+                        <li class="header_nav_item"><button title="Fun Facts & Space Trivia" id="desktop-page2Btn">Fun Facts &amp; Space Trivia</button></li>
+                        <li class="header_nav_item"><button title="The Universe" id="desktop-page3Btn">The Universe</button></li>
+                        <li class="header_nav_item"><button title="Space Technology" id="desktop-page4Btn">Space Technology</button></li>
+                    </ul>
+                </nav>
+                <div class="header-logo">
+                    <a href="./index.html" class="header-title">
+                        <img src="/images/galaxy.png" alt="GASI Logo">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div id="overlay"></div>
+        <main>
+            <section id="home">
+                <div class="intro-section"> <!--INTRO-->
+                    <div>
+                        <h1>Welcome to GASI</h1>
+                        <p>Global Astronomy and Space Institute (GASI) is your gateway to the cosmos!
+                            Dive into fascinating facts about our solar system, 
+                            discover the mysteries of gravity and orbits, 
+                            and explore the technology that makes space exploration possible. 
+                            Whether you’re a curious learner or a space enthusiast, 
+                            you’ll find something inspiring here. 
+                            <br>Join us as we journey through the wonders of our universe!
+                        </p>
+                        <hr>
+                    </div>
+                    <div>
+                        <h2>Before we start, <br>Let's learn the fundamentals of astronomy.</h2>
+                        <a href="https://youtu.be/0rHUDWjR5gg?si=ARfUvMJ6yW4gzynN" target="_blank" rel="noopener" class="button-link"><h2>Watch</h2></a>
+                    </div>
+                </div>
+                <div class="card-grid-section">
+                    <h2>Explore More</h2>
+                    <div class="card-grid">
+                        <button class="card" id="home-nav-card1">
+                            <span>Planets Overview</span>
+                            <span class="circle-box">&#8594;</span>
+                        </button>
+                        <button class="card" id="home-nav-card2">
+                            <span>Fun Facts & Space Trivia</span>
+                            <span class="circle-box">&#8594;</span>
+                        </button>
+                        <button class="card" id="home-nav-card3">
+                            <span>The Universe</span>
+                            <span class="circle-box">&#8594;</span>
+                        </button>
+                        <button class="card" id="home-nav-card4">
+                            <span>Space Technology</span>
+                            <span class="circle-box">&#8594;</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section id="planets">
+                <div class="intro-section"> <!--INTRO-->
+                    <div>
+                        <h1>Solar System Exploration</h1>
+                        <p>
+                        Our solar system is home to a diverse family of planets, 
+                        each with its own unique characteristics and mysteries. 
+                        From the scorching surface of Mercury to the icy rings of Saturn, 
+                        every planet offers fascinating insights into the formation and evolution of our cosmic neighborhood. 
+                        Explore how these worlds differ in size, composition, atmosphere, and orbit, 
+                        and discover what makes each planet special in the grand tapestry of the solar system.
+                        </p>
+                        <hr>
+                    </div>
+                    <div class="horizontal-flexbox">
+                        <div>
+                            <h2>Ready to explore? <br>Join us as we explore our solar system.</h2>
+                            <a href="#planets-overview" class="button-link"><h2>Let's Explore</h2></a>
+                        </div>
+                        <div class="horizontal-flexbox middle-text-box">
+                            <div>
+                                <h1 class="highlight-text">08</h1>
+                                <h3>Planets</h3>
+                            </div>
+                            <div>
+                                <h1 class="highlight-text">05</h1>
+                                <h3>Dwarf Planets</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-section">
+                    <h2>Quick Introduction</h2>
+                    <div class="horizontal-flexbox">
+                        <div>
+                            <p>
+                                What is a planet? The word goes back to the ancient Greek word planēt, 
+                                and it means "wanderer." A more modern definition can be found in the Merriam-Webster 
+                                dictionary which defines a planet as "any of the large bodies that revolve around 
+                                the Sun in the solar system."
+                                <br><br>
+                                In 2006, the International Astronomical Union (IAU) - a group of astronomers that 
+                                names objects in our solar system - agreed on their own definition of the word "planet." 
+                                This new definition changed caused Pluto's famous "demotion" to a dwarf planet.
+                            </p>
+                            <hr>
+                            <a href="https://en.wikipedia.org/wiki/Planet" target="_blank" class="read-more-link">
+                                <div>
+                                    <h3>Read More</h3>
+                                    <div class="circle-box">&#8594;</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="video-container">
+                            <div class="video-wrapper">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/lcZTcfdZ3Ow?si=Mw8MVmrwj7f2GI1V" title="The Planets In Our Solar System" allowfullscreen></iframe>
+                                <p>
+                                    The Planets In Our Solar System - A 3D Animation by The Science Channel
+                                    <br>Video by The Science Channel
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-section" id="planets-overview">
+                    <h2>About Planets</h2>
+                    <p>Our solar system has eight planets: 
+                        Mercury, Venus, Earth, Mars, Jupiter, 
+                        Saturn, Uranus, and Neptune. 
+                        <br>There are five officially recognized 
+                        dwarf planets in our solar system: 
+                        Ceres, Pluto, Haumea, Makemake, and Eris.
+                    </p>
+                </div>
+                <div class="item-section">
+                    <h2>Planets Summary</h2>
+                    <div class="horizontal-flexbox" id="planets-overview-cards">
+                        <div>
+                            <h3>Inner Planets</h3>
+                            <p>
+                                The four inner planets are rocky worlds with solid surfaces. 
+                                They are smaller than the outer planets and are closer to the Sun. 
+                                The inner planets are Mercury, Venus, Earth, and Mars.
+                            </p>
+                            <div class="card-grid">
+                                <div class="flip-card"> <!-- Flip Card for Venus -->
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front venus-image">
+                                            <h3>Venus</h3>
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <h3>Venus</h3>
+                                            <p>Venus is the second planet from the Sun, 
+                                                and the sixth largest planet.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-card"> <!-- Flip Card for Earth -->
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front earth-image">
+                                            <h3>Earth</h3>
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <h3>Earth</h3>
+                                            <p>Earth – our home planet – is the third planet from the Sun, 
+                                                and the fifth largest planet.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-card"> <!-- Flip Card for Mercury -->
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front mercury-image">
+                                            <h3>Mercury</h3>
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <h3>Mercury</h3>
+                                            <p>Mercury is the planet nearest to the Sun, 
+                                               and the smallest planet in our solar system.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-card"> <!-- Flip Card for Mars -->
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front mars-image">
+                                            <h3>Mars</h3>
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <h3>Mars</h3>
+                                            <p>Mars is the fourth planet from the Sun, 
+                                                and the seventh largest planet.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <hr>
+                            <h3>Outer Planets</h3>
+                            <p>
+                                The giant planets in the outer solar system don't have hard surfaces. 
+                                Instead, they have swirling gases above a core. 
+                                Jupiter and Saturn are gas giants. 
+                                Uranus and Neptune are ice giants.
+                            </p>
+                            <div class="card-grid">
+                                <div class="flip-card"> <!-- Flip Card for Jupiter -->
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front jupiter-image">
+                                            <h3>Jupiter</h3>
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <h3>Jupiter</h3>
+                                            <p>Jupiter is the fifth planet from the Sun, 
+                                                and the largest planet in our solar system.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-card"> <!-- Flip Card for Saturn -->
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front saturn-image">
+                                            <h3>Saturn</h3>
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <h3>Saturn</h3>
+                                            <p>Saturn is the sixth planet from the Sun, 
+                                                and the second largest planet in our solar system.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-card"> <!-- Flip Card for Uranus -->
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front uranus-image">
+                                            <h3>Uranus</h3>
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <h3>Uranus</h3>
+                                            <p>Uranus is the seventh planet from the Sun, 
+                                                and the third largest planet in our solar system.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flip-card"> <!-- Flip Card for Neptune -->
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front neptune-image">
+                                            <h3>Neptune</h3>
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <h3>Neptune</h3>
+                                            <p>Neptune is the eighth and most distant planet in our solar system. 
+                                                It's the fourth largest planet.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-section">
+                    <hr>
+                    <h2>Dwarf Planets</h2>
+                    <p>
+                        Dwarf planets are celestial bodies that orbit the Sun and are similar to planets, 
+                        but do not meet all the criteria to be classified as a full planet. 
+                        The five officially recognized dwarf planets in our solar system are: 
+                        Ceres, Pluto, Haumea, Makemake, and Eris.
+                    </p>
+                    <div class="card-grid">
+                        <div class="flip-card"> <!-- Flip Card for Ceres -->
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front ceres-image">
+                                    <h3>Ceres</h3>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h3>Ceres</h3>
+                                    <p>Ceres is the largest object in the asteroid belt between Mars and Jupiter, 
+                                        and the only dwarf planet located in the inner solar system.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card"> <!-- Flip Card for Pluto -->
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front pluto-image">
+                                    <h3>Pluto</h3>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h3>Pluto</h3>
+                                    <p>Pluto was once considered the ninth planet, 
+                                        but was reclassified as a dwarf planet in 2006.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card"> <!-- Flip Card for Haumea -->
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front haumea-image">
+                                    <h3>Haumea</h3>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h3>Haumea</h3>
+                                    <p>Haumea is known for its elongated shape and fast rotation, 
+                                        and has two moons.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card"> <!-- Flip Card for Makemake -->
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front makemake-image">
+                                    <h3>Makemake</h3>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h3>Makemake</h3>
+                                    <p>Makemake is one of the largest known dwarf planets, 
+                                        and has no known moons.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card"> <!-- Flip Card for Eris -->
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front eris-image">
+                                    <h3>Eris</h3>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h3>Eris</h3>
+                                    <p>Eris is one of the largest known dwarf planets, 
+                                        and was discovered in 2005.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-section">
+                    <hr>
+                    <h2>Planet Arrangement Game</h2>
+                    <p>Test your knowledge of the solar system by arranging the planets in the correct order from the Sun. 
+                        <br>Drag and drop the planets into the correct order, 
+                        then check your answer to see if you got it right!
+                    </p>
+                    <div id="planet-game">
+                        <div id="planets-game-start" class="game-start-menu overview-image">
+                            <h2>Planet Arrangement Game</h2>
+                            <p>Can you arrange the planets in the correct order from the Sun?</p>
+                            <button id="planets-game-start-btn" class="button-link">Start</button>
+                        </div>
+                        <p>Drag the planets below into the correct order from the Sun.</p>
+                        <div class="planet-game-scene-container">
+                            <div class="planet-game-scene">
+                                <div id="sun">SUN</div>
+                                <div class="planet-dropzone"></div>
+                                <div class="planet-dropzone"></div>
+                                <div class="planet-dropzone"></div>
+                                <div class="planet-dropzone"></div>
+                                <div class="planet-dropzone"></div>
+                                <div class="planet-dropzone"></div>
+                                <div class="planet-dropzone"></div>
+                                <div class="planet-dropzone"></div>
+                            </div>
+                            <div class="planet-draggables">
+                                <div class="planet-draggable mercury-image" draggable="true" data-planet="Mercury">Mercury</div>
+                                <div class="planet-draggable venus-image" draggable="true" data-planet="Venus">Venus</div>
+                                <div class="planet-draggable earth-image" draggable="true" data-planet="Earth">Earth</div>
+                                <div class="planet-draggable mars-image" draggable="true" data-planet="Mars">Mars</div>
+                                <div class="planet-draggable jupiter-image" draggable="true" data-planet="Jupiter">Jupiter</div>
+                                <div class="planet-draggable saturn-image" draggable="true" data-planet="Saturn">Saturn</div>
+                                <div class="planet-draggable uranus-image" draggable="true" data-planet="Uranus">Uranus</div>
+                                <div class="planet-draggable neptune-image" draggable="true" data-planet="Neptune">Neptune</div>
+                            </div>
+                        </div>
+                        <div class="planet-game-controls">
+                            <button id="check-planets-btn" class="button-link">Check Order</button>
+                            <button id="reset-planets-btn" class="button-link">Reset</button>
+                            <div id="planets-game-timer">
+                                <span id="timer-minutes">00</span>:<span id="timer-seconds">00</span>
+                            </div>
+                        </div>
+                        <div id="planet-game-result"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="facts" class="bg-spacesuit-white">
+                <div class="intro-section"> <!--INTRO-->
+                    <div>
+                        <h1>Fun Facts & Space Trivia</h1>
+                        <p>
+                            Space is full of wonders and mysteries.
+                            From the extreme temperatures of Venus to the vastness of the universe,
+                            there are countless fascinating facts and trivia that make space exploration exciting.
+                            Discover the unique features of each planet,
+                            learn about the largest volcano in the solar system,
+                            and explore the mysteries of black holes and dark matter.
+                        </p>
+                        <hr>
+                    </div>
+                    <div class="horizontal-flexbox">
+                        <div>
+                            <h2>Ready to learn? <br>Click the button below to discover each planet's facts.</h2>
+                            <a href="#space-facts" class="button-link"><h2>Let's Learn</h2></a>
+                        </div>
+                    </div> 
+                </div>
+                <div class="facts-section-container">
+                    <div>
+                        <h1 class="page-heading-lg">Solar System Facts</h1>
+                    </div>
+                    <div>
+                        <hr>
+                        <h3>10 THINGS ABOUT OUR SOLAR SYSTEM</h3>
+                        <div class="carousel-container">
+                            <div class="carousel-slide">
+                                <div class="carousel-item active">
+                                    <div class="carousel-item-content">
+                                        <p>1. Our planetary system is called “the solar system” because we use <strong>the word “solar” to describe things related to our star, after the Latin word for Sun, "solis"</strong>.</p>
+                                        <img src="/images/facts_bg.jpg" alt="Solar System" class="circle-box">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-item-content">
+                                        <p>2. Our solar system orbits the center of the Milky Way galaxy at about <strong>515,000 mph (829,000 kph)</strong>.</p>
+                                        <img src="/images/Sun_in_Milky_Way-1.jpeg" alt="Milky Way" class="circle-box">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-item-content">
+                                        <p>3. It takes our solar system about <strong>230 million years</strong> to complete one orbit around the galactic center.</p>
+                                        <img src="/images/667318main_jpl_pioneer_galaxy_full.jpg" alt="Pioneer Galaxy" class="circle-box">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-item-content">
+                                        <p>4. The <strong>hottest planet in our solar system is Venus</strong>, even though Mercury is closer to the Sun.</p>
+                                        <img src="/images/overview_venus.webp" alt="Venus" class="circle-box">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-item-content">
+                                        <p>5. The largest planet is Jupiter. If Jupiter was a hollow shell, <strong>1,000 Earths could fit inside</strong>.</p>
+                                        <img src="/images/overview_jupiter.webp" alt="Jupiter" class="circle-box">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-item-content">
+                                        <p>6. There are <strong>hundreds of moons</strong> in our solar system. Most orbit planets, but some asteroids have moons.</p>
+                                        <img src="/images/Crater-riddled_moon.jpg" alt="Crater Riddled Moon" class="circle-box">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-item-content">
+                                        <p>7. The four giant planets – and <strong>at least one asteroid</strong> – have rings. <strong>None</strong> are as spectacular as Saturn’s gorgeous rings.</p>
+                                        <img src="/images/overview_saturn.webp" alt="Saturn" class="circle-box">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-item-content">
+                                        <p>8. More than <strong>300 robotic spacecraft</strong> from many nations have explored destinations beyond Earth's orbit.</p>
+                                        <img src="/images/PIA21440-1280w.jpg" alt="Robotic Spacecraft" class="circle-box">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-item-content">
+                                        <p>9. Our solar system is the only one known to support life. So far, <strong>we only know of life on Earth</strong>, but we’re looking for more everywhere we can.</p>
+                                        <img src="/images/overview_earth.webp" alt="Earth" class="circle-box">
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-item-content">
+                                        <p>10. <strong>NASA’s Voyager 1 and Voyager 2</strong> are the only spacecraft leaving our solar system. Three other spacecraft – <strong>Pioneer 10, Pioneer 11, and New Horizons</strong> – will eventually hit interstellar space.</p>
+                                        <img src="/images/stsci-h-p1701a-m2000x1933.webp" alt="Spacecraft" class="circle-box">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-controls">
+                                <button class="button-link" id="carousel-prev">&#8592;</button>
+                                <button class="button-link" id="carousel-next">&#8594;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-section" id="space-facts">
+                    <h2>Introduction</h2>
+                    <p>
+                        Our solar system includes the Sun, eight planets, 
+                        <a class="underline-text-link" href="https://www.iau.org/public/themes/pluto" target="_blank">five officially named dwarf planets</a>, hundreds of moons, 
+                        and thousands of asteroids and comets.
+                        Our solar system is <strong>located in the Milky Way</strong>, 
+                        a barred spiral galaxy with two major arms, and two minor arms. 
+                        Our Sun is in a small, partial arm of the Milky Way called <strong>the Orion Arm</strong>,
+                        or <strong>Orion Spur</strong>, between the Sagittarius and Perseus arms. 
+                        Our solar system orbits the center of the galaxy at about <strong>515,000 mph (828,000 kph)</strong>. 
+                        It takes about <strong>230 million years</strong> to complete one orbit around the galactic center.
+                    </p>
+                    <div class="item-section no-padding">
+                        <div class="horizontal-flexbox">
+                            <div class="video-container">
+                                <div class="video-wrapper">
+                                    <iframe src="https://eyes.nasa.gov/apps/solar-system/#/home?interactPrompt=true&featured=false&detailPanel=false&search=false&shareButton=false&menu=false" allowfullscreen ></iframe>
+                                </div>
+                                <p>
+                                    Explore the Solar System with NASA's Eyes on the Solar System.
+                                    <br>Video by NASA
+                                </p>
+                            </div>
+                            <div>
+                                <h2>Namesake</h2>
+                                <p>
+                                    Our planetary system is called “the solar system” because we use the word “solar” 
+                                    to describe things related to our star, after the Latin word for Sun, "solis."
+                                </p>
+                                <hr>
+                                <h2>Potential for Life</h2>
+                                <p>
+                                    So far, we've only know about life on Earth, 
+                                    but <a class="underline-text-link" href="https://science.nasa.gov/exoplanets/can-we-find-life" target="_blank">NASA is searching for life</a> 
+                                    on other worlds in our solar system and beyond.
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="horizontal-flexbox">
+                            <div>
+                                <h2>Size and Distance</h2>
+                                <p>
+                                    Our solar system extends much farther than the planets that orbit the Sun. The solar system also includes the Kuiper Belt that lies past Neptune's orbit. This is a ring of icy bodies, almost all smaller than the most popular Kuiper Belt Object – dwarf planet Pluto.
+                                </p>
+                                <p>
+                                    Beyond the fringes of the Kuiper Belt is the Oort Cloud. This giant spherical shell surrounds our solar system. It has never been directly observed, but its existence is predicted based on mathematical models and observations of comets that likely originate there.
+                                </p>
+                                <p>
+                                    The Oort Cloud is made of icy pieces of space debris - some bigger than mountains – orbiting our Sun as far as 1.6 light-years away. This shell of material is thick, extending from 5,000 astronomical units to 100,000 astronomical units. One astronomical unit (or AU) is the distance from the Sun to Earth, or about 93 million miles (150 million kilometers).
+                                </p>
+                                <p>
+                                    The Oort Cloud is the boundary of the Sun's gravitational influence, where orbiting objects can turn around and return closer to our Sun.
+                                </p>
+                                <p>
+                                    The Sun's heliosphere doesn't extend quite as far. The heliosphere is the bubble created by the solar wind – a stream of electrically charged gas blowing outward from the Sun in all directions. The boundary where the solar wind is abruptly slowed by pressure from interstellar gases is called the termination shock. This edge occurs between 80-100 astronomical units.
+                                </p>
+                                <p>
+                                    Two NASA spacecraft launched in 1977 have crossed the termination shock: Voyager 1 in 2004 and Voyager 2 in 2007. Voyager 1 went interstellar in 2012 and Voyager 2 joined it in 2018. But it will be many thousands of years before the two Voyagers exit the Oort Cloud.
+                                </p>
+                            </div>
+                            <div>
+                                <h2>Moons</h2>
+                                <p>
+                                    Our solar system has hundreds of moons orbiting planets, dwarf planets, and asteroids.
+                                </p>
+                                <p>
+                                    Of the eight planets, Mercury and Venus are the only ones with no moons, 
+                                    although Venus does have a quasi-satellite that has officially been named Zoozve. 
+                                </p>
+                                <p>
+                                    The giant planets Jupiter and Saturn lead our solar system’s moon counts. 
+                                    In some ways, the swarms of moons around these worlds resemble mini versions of our solar system.
+                                </p>
+                                <p>
+                                    Pluto, smaller than our own moon, has five moons in its orbit, including Charon, 
+                                    a moon so large it makes Pluto wobble.
+                                </p>
+                                <hr>
+                                <h2>Formation</h2>
+                                <p>
+                                    Our solar system formed about 4.6 billion years ago from a dense cloud of 
+                                    interstellar gas and dust. The cloud collapsed, possibly due to the 
+                                    shockwave of a nearby exploding star, called a supernova. 
+                                    When this dust cloud collapsed, it formed a solar nebula – a spinning, 
+                                    swirling disk of material.
+                                </p>
+                                <p>
+                                    At the center, gravity pulled more and more material in. Eventually, 
+                                    the pressure in the core was so great that hydrogen atoms began to combine 
+                                    and form helium, releasing a tremendous amount of energy. With that, our 
+                                    Sun was born, and it eventually amassed more than 99% of the available matter.
+                                </p>
+                                <p>
+                                    Matter farther out in the disk was also clumping together. 
+                                    These clumps smashed into one another, forming larger and larger objects. 
+                                    Some of them grew big enough for their gravity to shape them into spheres, 
+                                    becoming planets, dwarf planets, and large moons. In other cases, 
+                                    planets did not form: the asteroid belt is made of bits and pieces of the early 
+                                    solar system that could never quite come together into a planet. 
+                                    Other smaller leftover pieces became asteroids, comets, meteoroids, 
+                                    and small, irregular moons.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="horizontal-flexbox">
+                            <div>
+                                <h2>Structure</h2>
+                                <p>
+                                    The order and arrangement of the planets and other bodies in our 
+                                    solar system is due to the way the solar system formed. 
+                                    Nearest to the Sun, only rocky material could withstand the heat 
+                                    when the solar system was young. For this reason, 
+                                    the first four planets – Mercury, Venus, Earth, and Mars – 
+                                    are terrestrial planets. They are all small with solid, rocky surfaces.
+                                </p>           
+                                <p>Meanwhile, materials we are used to seeing as ice, 
+                                    liquid, or gas settled in the outer regions of the young solar system. 
+                                    Gravity pulled these materials together, and that is where 
+                                    we find gas giants Jupiter and Saturn, and the ice giants 
+                                    Uranus and Neptune.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="summary-section">
+                    <h2 class="page-heading-lg" id="bg-facts">Solar System Quick Facts</h2>
+                    <div class="summary-details-grid">
+                        <div> <!-- Summary Card for the Sun -->
+                            <details class="summary-card">
+                                <summary>
+                                    <img src="/images/overview_sun.jpg" alt="The Sun" class="summary-card-img">
+                                    <span>The Sun</span>
+                                </summary>
+                                <h2 class="summary-card-text">Eyes on the Solar System: Sun</h2>
+                                <div class="video-container">
+                                    <div class="video-wrapper">
+                                        <iframe src="https://eyes.nasa.gov/apps/solar-system/#/
+                                                    sun?rate=0&time=2049-12-30T23%3A59%3A59.999+
+                                                    00%3A00&interactPrompt=true&featured=false&detailPanel=
+                                                    false&search=false&shareButton=false&menu=false&collapse
+                                                    SettingsOptions=true" allowfullscreen >
+                                        </iframe>
+                                    </div>
+                                    <p>
+                                        Explore the Sun with NASA's Eyes on the Solar System.
+                                        <br>3D Model by NASA
+                                    </p>
+                                </div>
+                                <div class="summary-card-text">
+                                    <h2>Overview</h2>
+                                    <p>
+                                        The Sun is the star at the heart of our solar system. 
+                                        Its gravity holds the solar system together, 
+                                        keeping everything — from the biggest planets to 
+                                        the smallest bits of debris — in its orbit.
+                                    </p>
+                                    <h2>Size</h2>
+                                    <ul>
+                                        <li>Diameter: Approximately 1.39 million kilometers (or 864,000 miles)</li>
+                                        <li>Radius: Approximately 695,700 kilometers (or 432,300 miles)</li>
+                                        <li>Mass: ~1.989 × 10³⁰ kilograms (That’s about 330,000 times the mass of Earth)</li>
+                                    </ul>
+                                    <h2>Fun Facts</h2>
+                                    <ul>
+                                        <li>The Sun accounts for about 99.86% of the total mass of the solar system.</li>
+                                        <li>It takes about 8 minutes and 20 seconds for light from the Sun to reach Earth.</li>
+                                        <li>The Sun is a nearly perfect sphere, with a difference between its equatorial and polar diameters of less than 0.1%.</li>
+                                    </ul>
+                                </div>
+                                <div class="guessing-game-section">
+                                    <h3>Guessing Game</h3>
+                                    <h4>Question: How Many Earths Can Fit Inside the Sun?</h4>
+                                    <p>Type your guess below and see if you’re correct!</p>
+                                    <input type="number" id="sun-guess-input" min="1" placeholder="Your guess..." class="guess-input">
+                                    <button id="sun-guess-btn" class="button-link">Guess</button>
+                                    <div id="sun-guess-result"></div>
+                                </div>
+                            </details>
+                        </div>
+                        <div> <!-- Summary Card for Mercury -->
+                            <details class="summary-card">
+                                <summary>
+                                    <img src="/images/overview_mercury.webp" alt="Mercury" class="summary-card-img">
+                                    <span>Mercury</span>
+                                </summary>
+                                <h2 class="summary-card-text">Eyes on the Solar System: Mercury</h2>
+                                <div class="video-container">
+                                    <div class="video-wrapper">
+                                        <iframe src="https://eyes.nasa.gov/apps/solar-system/#/mercury?interactPrompt=true" allowfullscreen ></iframe>
+                                    </div>
+                                    <p>
+                                        Explore the Solar System with NASA's Eyes on the Solar System.
+                                        <br>3D Model by NASA
+                                    </p>
+                                </div>
+                                <div class="summary-card-text">
+                                    <h2>Overview</h2>
+                                    <p>
+                                        <strong>Mercury is the smallest planet in our solar system and the nearest to the Sun.</strong>
+                                        <br><br>Mercury is only slightly larger than Earth's Moon. 
+                                        It's the fastest planet, zipping around the Sun every 88 Earth days. 
+                                        Mercury is named for the swiftest of the ancient Roman gods.
+                                    </p>
+                                    <h2>Size</h2>
+                                    <ul>
+                                        <li>Diameter: Approximately 4,880 kilometers (or 3,032 miles)</li>
+                                        <li>Radius: Approximately 2,440 kilometers (or 1,516 miles)</li>
+                                        <li>Mass: ~3.30 × 10²³ kilograms (or 0.055 times the mass of Earth)</li>
+                                    </ul>
+                                    <h2>Fun Facts</h2>
+                                    <ul>
+                                        <li>Mercury has no atmosphere, so its surface temperature varies widely, from extremely hot during the day to extremely cold at night.</li>
+                                        <li>It has a very weak magnetic field, about 1% the strength of Earth's.</li>
+                                        <li>Mercury is the only planet in our solar system that has no moons or rings.</li>
+                                    </ul>
+                                </div>
+                                <div class="guessing-game-section">
+                                    <h3>Guessing Game</h3>
+                                    <h4>Question: What is temperature (in °F) on Mercury during daytime?</h4>
+                                    <p>Type your guess below and see if you’re correct!</p>
+                                    <input type="number" id="mercury-guess-input" placeholder="Your guess..." class="guess-input">
+                                    <button id="mercury-guess-btn" class="button-link">Guess</button>
+                                    <div id="mercury-guess-result"></div>
+                                </div>
+                            </details>
+                        </div>
+                        <div> <!-- Summary Card for Venus -->
+                            <details class="summary-card">
+                                <summary>
+                                    <img src="/images/overview_venus.webp" alt="Venus" class="summary-card-img">
+                                    <span>Venus</span>
+                                </summary>
+                                <h2 class="summary-card-text">Eyes on the Solar System: Venus</h2>
+                                <div class="video-container">
+                                    <div class="video-wrapper">
+                                        <iframe src="https://eyes.nasa.gov/apps/solar-system/#/venus?interactPrompt=true" allowfullscreen ></iframe>
+                                    </div>
+                                </div>
+                                <div class="summary-card-text">
+                                    <h2>Overview</h2>
+                                    <p>
+                                        <strong>Venus is the second planet from the Sun, and the sixth largest planet. 
+                                        It’s the hottest planet in our solar system.</strong>
+                                        <br><br>Venus is a cloud-swaddled planet and our nearest planetary neighbor. 
+                                        It has a surface hot enough to melt lead.
+                                    </p>
+                                    <h2>Size</h2>
+                                    <ul>
+                                        <li>Diameter: Approximately 12,104 kilometers (or 7,521 miles)</li>
+                                        <li>Radius: Approximately 6,052 kilometers (or 3,760 miles)</li>
+                                        <li>Mass: ~4.87 × 10²⁴ kilograms (or 0.815 times the mass of Earth)</li>
+                                    </ul>
+                                    <h2>Fun Facts</h2>
+                                    <ul>
+                                        <li>Venus has a thick atmosphere composed mainly of carbon dioxide, with clouds of sulfuric acid.</li>
+                                        <li>It rotates very slowly on its axis, taking about 243 Earth days to complete one rotation.</li>
+                                        <li>Venus is often called Earth's "sister planet" because of their similar size and composition.</li>
+                                    </ul>
+                                </div>
+                                <div class="guessing-game-section">
+                                    <h3>Guessing Game</h3>
+                                    <h4>Question: How many rings does Venus have?</h4>
+                                    <p>Type your guess below and see if you’re correct!</p>
+                                    <input type="number" id="venus-guess-input" min="0" placeholder="Your guess..." class="guess-input">
+                                    <button id="venus-guess-btn" class="button-link">Guess</button>
+                                    <div id="venus-guess-result"></div>
+                                </div>
+                            </details>
+                        </div>
+                        <div> <!-- Summary Card for Earth -->
+                            <details class="summary-card">
+                                <summary>
+                                    <img src="/images/overview_earth.webp" alt="Earth" class="summary-card-img">
+                                    <span>Earth</span>
+                                </summary>
+                                <h2 class="summary-card-text">Eyes on the Solar System: Earth</h2>
+                                <div class="video-container">
+                                    <div class="video-wrapper">
+                                        <iframe src="https://eyes.nasa.gov/apps/solar-system/#/earth?interactPrompt=true" allowfullscreen ></iframe>
+                                    </div>
+                                </div>
+                                <div class="summary-card-text">
+                                    <h2>Overview</h2>
+                                    <p>
+                                        <strong>Earth is the third planet from the Sun and the only known planet to support life.</strong>
+                                        <br><br>Earth is unique in our solar system for its abundance of liquid water, 
+                                        which covers about 71% of its surface. 
+                                        It has a diverse range of ecosystems and climates, making it a haven for life.
+                                    </p>
+                                    <h2>Size</h2>
+                                    <ul>
+                                        <li>Diameter: Approximately 12,742 kilometers (or 7,918 miles)</li>
+                                        <li>Radius: Approximately 6,371 kilometers (or 3,959 miles)</li>
+                                        <li>Mass: ~5.97 × 10²⁴ kilograms (or 1 times the mass of Earth)</li>
+                                    </ul>
+                                    <h2>Fun Facts</h2>
+                                    <ul>
+                                        <li>Earth has a diverse range of ecosystems, from deserts to rainforests.</li>
+                                        <li>It is the only planet known to support life, with millions of species of plants and animals.</li>
+                                        <li>Earth is the only planet in our solar system that has a large amount of liquid water on its surface.</li>
+                                    </ul>
+                                </div>
+                                <div class="guessing-game-section">
+                                    <h3>Guessing Game</h3>
+                                    <div>
+                                        <h4>Question: What is the rotation speed (in km/h) of the Earth at the equator?</h4>
+                                        <p>Type your guess below and see if you’re correct!</p>
+                                        <input type="number" id="earth-guess-input" min="1" placeholder="Your guess..." class="guess-input">
+                                        <button id="earth-guess-btn" class="button-link">Guess</button>
+                                        <div id="earth-guess-result"></div>
+                                    </div>
+                                    <div>
+                                        <h4>Question: Every day, how many tons of dust and meteoroids fall to Earth from space?</h4>
+                                        <p>Type your guess below and see if you’re correct!</p>
+                                        <input type="number" id="earth-dust-guess-input" min="0" placeholder="Your guess..." class="guess-input">
+                                        <button id="earth-dust-guess-btn" class="button-link">Guess</button>
+                                        <div id="earth-dust-guess-result"></div>
+                                    </div>
+                                </div>
+                            </details>
+                        </div>
+                        <div> <!-- Summary Card for The Moon -->
+                            <details class="summary-card">
+                                <summary>
+                                    <img src="/images/overview_moon.webp" alt="Moon" class="summary-card-img">
+                                    <span>The Moon</span>
+                                </summary>
+                                <h2 class="summary-card-text">Eyes on the Solar System: Moon</h2>
+                                <div class="video-container">
+                                    <div class="video-wrapper">
+                                        <iframe src="https://eyes.nasa.gov/apps/solar-system/#/moon?interactPrompt=true" allowfullscreen ></iframe>
+                                    </div>
+                                </div>
+                                <div class="summary-card-text">
+                                    <h2>Overview</h2>
+                                    <p>
+                                        From lighting up our skies to preserving evidence of our solar system’s history, 
+                                        Earth’s closest neighbor plays a pivotal role in the study of our planet and beyond.
+                                    </p>
+                                    <h2>Size</h2>
+                                    <ul>
+                                        <li>Diameter: Approximately 3,474 kilometers (or 2,159 miles)</li>
+                                        <li>Radius: Approximately 1,737 kilometers (or 1,079 miles)</li>
+                                        <li>Mass: ~7.35 × 10²² kilograms (or 0.0123 times the mass of Earth)</li>
+                                    </ul>
+                                    <h2>Fun Facts</h2>
+                                    <ul>
+                                        <li>The Moon has a very thin atmosphere, so it cannot support liquid water.</li>
+                                        <li>It takes about 27.3 days for the Moon to orbit the Earth.</li>
+                                        <li>The Moon is about 1/4 the size of Earth.</li>
+                                    </ul>
+                                </div>
+                                <div class="guessing-game-section">
+                                    <h3>Guessing Game</h3>
+                                    <h4>Question: In what year did the first humans land on the Moon?</h4>
+                                    <p>Type your guess below and see if you’re correct!</p>
+                                    <input type="number" id="moon-guess-input" min="0" placeholder="Your guess..." class="guess-input">
+                                    <button id="moon-guess-btn" class="button-link">Guess</button>
+                                    <div id="moon-guess-result"></div>
+                                </div>
+                            </details>
+                        </div>
+                        <div> <!-- Summary Card for Jupiter -->
+                            <details class="summary-card">
+                                <summary>
+                                    <img src="/images/overview_jupiter.webp" alt="Jupiter" class="summary-card-img">
+                                    <span>Jupiter</span>
+                                </summary>
+                                <h2 class="summary-card-text">Eyes on the Solar System: Jupiter</h2>
+                                <div class="video-container">
+                                    <div class="video-wrapper">
+                                        <iframe src="https://eyes.nasa.gov/apps/solar-system/#/jupiter?interactPrompt=true" allowfullscreen ></iframe>
+                                    </div>
+                                </div>
+                                <div class="summary-card-text">
+                                    <h2>Overview</h2>
+                                    <p>
+                                        <strong>Jupiter is the fifth planet from the Sun and the largest planet in our solar system.</strong>
+                                        <br><br>Jupiter is known for its Great Red Spot, a giant storm that has been raging for hundreds of years. 
+                                        It is a gas giant with a thick atmosphere made mostly of hydrogen and helium.
+                                    </p>
+                                    <h2>Size</h2>
+                                    <ul>
+                                        <li>Diameter: Approximately 139,820 kilometers (or 86,881 miles)</li>
+                                        <li>Radius: Approximately 69,911 kilometers (or 43,441 miles)</li>
+                                        <li>Mass: ~1.90 × 10²⁷ kilograms (or 317.8 times the mass of Earth)</li>
+                                    </ul>
+                                    <h2>Fun Facts</h2>
+                                    <ul>
+                                        <li>Jupiter has a very strong magnetic field, about 20,000 times stronger than Earth's.</li>
+                                        <li>It has at least 79 known moons, including the four largest: Io, Europa, Ganymede, and Callisto.</li>
+                                        <li>Jupiter's atmosphere is mostly hydrogen and helium, with traces of methane, water vapor, ammonia, and other compounds.</li>
+                                    </ul>
+                                </div>
+                                <div class="guessing-game-section">
+                                    <h3>Guessing Game</h3>
+                                    <div>
+                                        <h4>Question: How long does sunlight takes to travel from the Sun to Jupiter?</h4>
+                                        <h5>Hint: only 2 digits and in minutes</h5>
+                                        <p>Type your guess below and see if you’re correct!</p>
+                                        <input type="number" id="jupiter-guess-input" min="1" placeholder="Your guess..." class="guess-input">
+                                        <button id="jupiter-guess-btn" class="button-link">Guess</button>
+                                        <div id="jupiter-guess-result"></div>
+                                    </div>
+                                    <div>
+                                        <h4>Question: How many years of Earth does Jupiter need to make a complete orbit around the Sun?</h4>
+                                        <p>Type your guess below and see if you’re correct!</p>
+                                        <input type="number" id="jupiter-orbit-guess-input" min="0" placeholder="Your guess..." class="guess-input">
+                                        <button id="jupiter-orbit-guess-btn" class="button-link">Guess</button>
+                                        <div id="jupiter-orbit-guess-result"></div>
+                                    </div>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-section">
+                    <div class="horizontal-flexbox">
+                        <div>
+                            <h2>Video: 10 Mindblowing Facts About The Solar System</h2>
+                            <p>Explore the wonders of our solar system with this engaging video that highlights ten incredible facts about the planets, moons, and other celestial bodies.</p>
+                            <p>From the extreme temperatures of Venus to the icy rings of Saturn, this video takes you on a journey through the fascinating features of our solar system.</p>
+                            <p>Learn about the unique characteristics of each planet, the mysteries of dwarf planets like Pluto, and the intriguing phenomena that shape our cosmic neighborhood.</p>
+                            <p>Whether you're a space enthusiast or just curious about the universe, this video is sure to captivate your imagination and deepen your understanding of the solar system.</p>
+                            <hr>
+                            <a href="https://science.nasa.gov/solar-system" target="_blank" class="read-more-link">
+                                <div>
+                                    <h3>For More Facts</h3>
+                                    <div class="circle-box">&#8594;</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="video-container">
+                            <div class="video-wrapper">
+                                <iframe src="https://www.youtube.com/embed/3Gu0RdEyxL8?si=41tcvHYkyw-16Xzc" title="10 Mindblowing Facts About The Solar System" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="universe">
+                <div class="intro-section"> <!--INTRO-->
+                    <div>
+                        <h1>Welcome to The Universe</h1>
+                        <p>
+                        Space is full of wonders and mysteries.
+                        From the extreme temperatures of Venus to the vastness of the universe,
+                        there are countless fascinating facts and trivia that make space exploration exciting.
+                        Discover the unique features of each planet,
+                        learn about the largest volcano in the solar system,
+                        and explore the mysteries of black holes and dark matter.
+                        </p>
+                        <hr>
+                    </div>
+                    <div class="horizontal-flexbox">
+                        <div>
+                            <h2>Ready to dive in? <br>Click the button below to uncover the mysteries of the universe.</h2>
+                            <a href="#universe-intro" class="button-link"><h2>Let's Dive In</h2></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-flexbox padding-y-2 padding-x-1 bg-spacesuit-grey">
+                    <span class="nav-title">Explore:</span>
+                    <nav class="item-section" id="universe-nav">
+                        <ul>
+                            <li class="active"><a href="#exoplanets">
+                                <div class="row-flexbox align-items-center-with-space-between">
+                                    <img src="/images/lp79118d-beautyshot-jpg.webp" alt="Exoplanets" class="nav-icon">
+                                    <div>
+                                        <span class="nav-item-title">Exoplanets</span>
+                                        <span class="nav-item-subtitle">Worlds beyond our solar system</span>
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li><a href="#stars">
+                                <div class="row-flexbox align-items-center-with-space-between">
+                                    <img src="/images/red-giant-jpg.webp" alt="Stars" class="nav-icon">
+                                    <div>
+                                        <span class="nav-item-title">Stars</span>
+                                        <span class="nav-item-subtitle">Giant balls of hot gas that burn for millions to billions of years.</span>
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li><a href="#black-holes">
+                                <div class="row-flexbox align-items-center-with-space-between">
+                                    <img src="/images/bh-accretion-disk-sim-360-4k-prores.00001-print-jpg.webp" alt="Black Holes" class="nav-icon">
+                                    <div>
+                                        <span class="nav-item-title">Black Holes</span>
+                                        <span class="nav-item-subtitle">Concentrations of matter with gravity so powerful not even light can escape.</span>
+                                    </div>
+                                </div>
+                            </a></li>
+                            <li><a href="#galaxies">
+                                <div class="row-flexbox align-items-center-with-space-between">
+                                    <img src="/images/spiral-galaxy-jpg.webp" alt="Solar System Icon" class="nav-icon">
+                                    <div>
+                                        <span class="nav-item-title">Galaxies</span>
+                                        <span class="nav-item-subtitle">Collections of stars, planets, and vast clouds of gas and dust bound together by gravity.</span>
+                                    </div>
+                                </div>
+                            </a></li>
+                        </ul>
+                        <div class="carousel-controls">
+                            <button class="button-link" id="uni-nav-next">&#8594;</button>
+                        </div>
+                    </nav>
+                </div>
+                <div class="facts-section-container" id="universe-intro">
+                    <div>
+                        <h1 class="page-heading-lg">Introduction of The Universe</h1>
+                    </div>
+                    <div class="video-container">
+                        <div>
+                            <div class="video-wrapper">
+                                <iframe src="https://www.youtube.com/embed/HdPzOWlLrbE?si=SA_9ltR2S6vsA3R-" title="Origins of the Universe 101 | National Geographic" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>
+                            The universe is everything that exists — including all of space, time, matter, 
+                            and energy. It contains billions of galaxies, each filled with stars, planets, 
+                            gas, and dust. Our own solar system, which includes Earth, is just a tiny part of 
+                            the Milky Way galaxy.
+                            <br><br>Scientists believe the universe began about 13.8 billion years ago 
+                            with a massive explosion called the Big Bang. Since then, it has been expanding, 
+                            and it continues to do so today.
+                            <br><br>The universe is incredibly vast and still full of mysteries. 
+                            From black holes and dark matter to the possibility of life beyond Earth, 
+                            it inspires both curiosity and wonder as we continue to explore and 
+                            understand more about the cosmos.
+                        </p>
+                        <hr>
+                        <a href="https://en.wikipedia.org/wiki/Universe" target="_blank" class="read-more-link">
+                            <div>
+                                <h3>Read More</h3>
+                                <div class="circle-box">&#8594;</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="intro-section" id="exoplanets">
+                    <div>
+                        <h1 class="page-heading-lg white-text">Exoplanets</h1>
+                        <p>
+                            An exoplanet is any planet beyond our solar system. 
+                            <br>Most of them orbit other stars, but some free-floating 
+                            <br>exoplanets, called rogue planets, are untethered to any star. 
+                            <br>We’ve confirmed nearly 6,000 exoplanets, 
+                            <br>out of the billions that we believe exist.
+                        </p>
+                    </div>
+                    <div class="horizontal-flexbox"></div>
+                </div>
+                <div class="vertical-flexbox padding-y-2 padding-x-1 bg-spacesuit-grey">
+                    <div class="horizontal-flexbox align-content-center-with-space-between">
+                        <span class="nav-title">Exoplanets Discovery</span>
+                        <a href="https://science.nasa.gov/exoplanets/discoveries-dashboard" target="_blank" class="read-more-link">
+                            <div>
+                                <h3>Exoplanets Discovery</h3>
+                                <div class="circle-box">&#8594;</div>
+                            </div>
+                        </a>
+                    </div>
+                    <nav class="item-section" id="exoplanets-info-list">
+                        <div class="carousel-controls">
+                            <button class="button-link" id="exo-nav-prev">&#8592;</button>
+                        </div>
+                        <ul>
+                            <li class="active">
+                                <div class="column-flexbox align-items-center-with-space-between">
+                                    <span class="nav-item-title"><hr>Confirmed Exoplanets</span>
+                                    <span class="nav-item-subtitle secondary-font-family">5933</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="column-flexbox align-items-center-with-space-between">
+                                    <span class="nav-item-title"><hr>Star Count</span>
+                                    <span class="nav-item-subtitle secondary-font-family">4430</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="column-flexbox align-items-center-with-space-between">
+                                    <span class="nav-item-title"><hr>Planetary Systems</span>
+                                    <span class="nav-item-subtitle secondary-font-family">4565</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="column-flexbox align-items-center-with-space-between">
+                                    <span class="nav-item-title"><hr>New Discoveries</span>
+                                    <span class="nav-item-subtitle secondary-font-family"><a href="https://science.nasa.gov/exoplanet-catalog/toi-5882-b" class="underline-text-link">TOI-5882 b</a></span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="carousel-controls">
+                            <button class="button-link" id="exo-nav-next">&#8594;</button>
+                        </div>
+                    </nav>
+                </div>
+                <div class="item-section">
+                    <div class="horizontal-flexbox">
+                        <div>
+                            <h2>Overview</h2>
+                            <p>
+                                Most of the exoplanets discovered so far are in 
+                                a relatively small region of our galaxy, the Milky Way. 
+                                (“Small” meaning within thousands of light-years of our 
+                                solar system; one light-year equals 5.88 trillion miles, 
+                                or 9.46 trillion kilometers.) Even the closest known 
+                                exoplanet to Earth, Proxima Centauri b, is still 
+                                about 4 light-years away. We know there are more 
+                                planets than stars in the galaxy.
+                            </p>
+                            <p>
+                                By measuring exoplanets’ sizes (diameters) 
+                                and masses (weights), we can see compositions ranging 
+                                from rocky (like Earth and Venus) to gas-rich 
+                                (like Jupiter and Saturn). Some planets may be dominated 
+                                by water or ice, while others are dominated by 
+                                iron or carbon. We’ve identified lava worlds 
+                                covered in molten seas, puffy planets the density 
+                                of Styrofoam and dense cores of planets still 
+                                orbiting their stars.
+                            </p>
+                            <a href="https://science.nasa.gov/exoplanets" target="_blank" class="read-more-link">
+                                <div>
+                                    <h3>For More Details</h3>
+                                    <div class="circle-box">&#8594;</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-section" id="stars">
+                    <div>
+                        <h1 class="page-heading-lg white-text">Stars</h1>
+                        <p>
+                            Astronomers estimate that the universe could contain up to one septillion stars – that’s a one followed by 24 zeros. Our Milky Way alone contains more than 100 billion, including our most well-studied star, the Sun.
+                        </p>
+                        <p>
+                            Stars are giant balls of hot gas – mostly hydrogen, with some helium and small amounts of other elements. Every star has its own life cycle, ranging from a few million to trillions of years, and its properties change as it ages.
+                        </p>
+                    </div>
+                    <div class="horizontal-flexbox"></div>
+                </div>
+                <div class="item-section">
+                    <div class="horizontal-flexbox">
+                        <div>
+                            <hr>
+                            <h2>Birth</h2>
+                            <p>
+                                Stars form in large clouds of gas and dust called molecular clouds. 
+                                Molecular clouds range from 1,000 to 10 million times the mass of 
+                                the Sun and can span as much as hundreds of light-years. 
+                                Molecular clouds are cold which causes gas to clump, 
+                                creating high-density pockets. Some of these clumps 
+                                can collide with each other or collect more matter, 
+                                strengthening their gravitational force as their mass grows. 
+                                Eventually, gravity causes some of these clumps to collapse. 
+                                When this happens, friction causes the material to heat up, 
+                                which eventually leads to the development of a protostar – 
+                                a baby star. Batches of stars that have recently formed 
+                                from molecular clouds are often called 
+                                <a href="https://science.nasa.gov/mission/hubble/science/universe-uncovered/hubble-star-clusters" 
+                                target="_blank" class="underline-text-link">stellar clusters</a>, and 
+                                molecular clouds full of stellar clusters are called stellar nurseries.
+                            </p>
+                            <div class="video-container">
+                                <div class="video-wrapper">
+                                    <img src="/images/Carina_Nebula-1.jpeg" alt="Carina Nebula">
+                                </div>
+                                <p>The edge of a nearby stellar nursery called NGC 3324, found at the northwest 
+                                    corner of the Carina Nebula, forms the “mountains” and “valleys” spanning 
+                                    this image captured by the James Webb Space Telescope. 
+                                    <br>NASA, ESA, CSA, and STScI
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <hr>
+                            <h2>Life</h2>
+                            <p>
+                                At first, most of the protostar’s energy comes from heat released by 
+                                its initial collapse. After millions of years, immense pressures and 
+                                temperatures in the star’s core squeeze the nuclei of hydrogen atoms 
+                                together to form helium, a process called nuclear fusion. Nuclear fusion 
+                                releases energy, which heats the star and prevents it from further 
+                                collapsing under the force of gravity.
+                            </p>
+                            <div class="video-container">
+                                <div class="video-wrapper">
+                                    <img src="/images/Sun_Emits_Flare.jpeg" alt="Solar Flare">
+                                </div>
+                                <p>Our Sun, a main sequence star, emits a strong solar flare flashes in this image captured by NASA's Solar Dynamics Observatory.
+                                    <br>NASA/SDO
+                                </p>
+                            </div>
+                            <p>
+                                Astronomers call stars that are stably undergoing nuclear fusion 
+                                of hydrogen into helium <a href="https://science.nasa.gov/universe/stars/types/#otp_main_sequence_stars" target="_blank" class="underline-text-link">main sequence stars</a>. This is the 
+                                longest phase of a star’s life. The star’s luminosity, size, 
+                                and temperature will slowly change over millions or billions of 
+                                years during this phase. Our Sun is roughly midway through its 
+                                main sequence stage.
+                            </p>
+                            <hr>
+                            <a href="https://science.nasa.gov/universe/stars/#life" target="_blank" class="read-more-link">
+                                <div>
+                                    <h3>For More Details</h3>
+                                    <div class="circle-box">&#8594;</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <hr>
+                            <h2>Death</h2>
+                            <p>
+                                At the beginning of the end of a star’s life, its core runs out of hydrogen to convert into helium. The energy produced by fusion creates pressure inside the star that balances gravity’s tendency to pull matter together, so the core starts to collapse. But squeezing the core also increases its temperature and pressure, making the star slowly puff up. However, the details of the late stages of the star’s death depend strongly on its mass.
+                            </p>
+                            <p>
+                                A low-mass star’s atmosphere will keep expanding until it becomes a subgiant or giant star while fusion converts helium into carbon in the core. (This will be the fate of our Sun, in several billion years.) Some giants become unstable and pulsate, periodically inflating and ejecting some of their atmospheres. Eventually, all the star’s outer layers blow away, creating an expanding cloud of dust and gas called a planetary nebula.
+                            </p>
+                            <div class="video-container">
+                                <div class="video-wrapper">
+                                    <img src="/images/The_Helix_Nebula-1.jpeg" alt="Helix Nebula">
+                                </div>
+                                <p>The Helix nebula, imaged here, lies 650 light-years away in the constellation Aquarius. Also known as NGC 7293, it is a typical example of planetary nebulae.
+                                    <br>NASA/JPL-Caltech
+                                </p>
+                            </div>
+                            <hr>
+                            <a href="https://science.nasa.gov/universe/stars/#death" target="_blank" class="read-more-link">
+                                <div>
+                                    <h3>For More Details</h3>
+                                    <div class="circle-box">&#8594;</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-section" id="black-holes">
+                    <h1 class="page-heading-lg white-text">Black Holes</h1>
+                    <div class="horizontal-flexbox">
+                        <div>
+                            <p>
+                                Black holes are among the most mysterious cosmic objects, 
+                                much studied but not fully understood. These objects aren’t really holes. 
+                                They’re huge concentrations of matter packed into very tiny spaces. 
+                                A black hole is so dense that gravity just beneath its surface, 
+                                the event horizon, is strong enough that nothing – not even light – 
+                                can escape. The event horizon isn’t a surface like Earth’s or even 
+                                the Sun’s. It’s a boundary that contains all the matter that makes up 
+                                the black hole.
+                            </p>
+                            <p>
+                                There is much we don’t know about black holes, 
+                                like what matter looks like inside their event horizons. 
+                                However, there is a lot that scientists do know about black holes.
+                            </p>
+                            <hr>
+                            <a href="https://en.wikipedia.org/wiki/Black_hole" target="_blank" class="read-more-link">
+                                <div>
+                                    <h3>Tap To Explore More</h3>
+                                    <div class="circle-box">&#8594;</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="video-container">
+                            <div class="video-wrapper">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/nJ4d4QEDOYM?si=VXuTPsawqQVcjYNP" title="YouTube video player" allowfullscreen></iframe>
+                            </div>
+                            <p>
+                                Black holes - what are they really? Learn this and more with “Astro-Investigates,” the video series that explores and explains big astrophysics topics with the help of NASA scientists.
+                                <br><strong>NASA</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-section">
+                    <h1 class="page-heading-lg">Overview</h1>
+                    <div class="horizontal-flexbox">
+                        <div>
+                            <h2>Finding Black Holes</h2>
+                            <p>
+                                Black holes don’t emit or reflect light, making them effectively invisible to telescopes. 
+                                Scientists primarily detect and study them based on how they affect their surroundings:
+                            </p>
+                            <ul>
+                                <li>Black holes can pull in gas and dust from nearby stars, 
+                                    forming an accretion disk that emits X-rays.</li>
+                                <li>A supermassive black hole’s intense gravity can cause stars to orbit around it in a 
+                                    particular way. Astronomers tracked the orbits of several stars near the 
+                                    center of the Milky Way to prove it houses a supermassive black hole, a discovery 
+                                    that won the 2020 Nobel Prize.</li>
+                                <li>When very massive objects accelerate through space, they create ripples in the 
+                                    fabric of space-time called gravitational waves. 
+                                    Scientists can detect some of these by the ripples’ effect on detectors.</li>
+                                <li>Massive objects like black holes can bend and distort light from more distant objects. This effect, 
+                                    called gravitational lensing, can be used to find isolated black holes that are otherwise invisible.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>Black Holes Are Not ...</h2>
+                            <p>
+                                Black holes are often misunderstood, leading to many myths and misconceptions. 
+                                Here are some common misconceptions about black holes:
+                            </p>
+                            <ul>
+                                <li>Wormholes. They don’t provide shortcuts between different points 
+                                    in space, or portals to other dimensions or universes.</li>
+                                <li>Cosmic vacuum cleaners. Black holes don’t suck in other matter. 
+                                    From far enough away, their gravitational effects are just like 
+                                    those of other objects of the same mass.</li>
+                                <li>Dangerous to Earth. The closest known black hole is about 1,000 light-years away, 
+                                    and it’s not on a collision course with our solar system.</li>
+                                <li>Made of antimatter. Black holes are made of normal matter, 
+                                    which means they don’t annihilate with normal matter.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="summary-section bg-spacesuit-black zero-margin">
+                    <div class="horizontal-flexbox padding-x-4 white-text">
+                        <h2 class="page-heading-lg white-text">Type of Black Holes</h2>
+                        <p class="line-height-2">
+                            Astronomers generally divide black holes into three categories according to their mass: 
+                            stellar-mass, supermassive, and intermediate-mass. 
+                            The mass ranges that define each group are approximate, and scientists 
+                            are always reassessing where the boundaries should be set. 
+                            Cosmologists suspect a fourth type, primordial black holes formed during 
+                            the birth of the universe, may also lurk undetected in the cosmos.
+                        </p>
+                    </div>
+                    <div class="summary-details-grid auto-shrink-flexbox-grid">
+                        <div> <!-- Summary Card for Stellar -->
+                            <details class="summary-card bg-spacesuit-white">
+                                <summary>
+                                    <img src="/images/Stellar_Mass-1.jpeg" alt="Stellar Mass" class="summary-card-img">
+                                    <span>Stellar</span>
+                                </summary>
+                                <div class="video-container">
+                                    <div class="video-wrapper">
+                                        <img src="/images/Stellar_Mass-1.jpeg" alt="Stellar Mass" class="zero-border-radius">
+                                    </div>
+                                    <p class="padding-x-1">
+                                        This simulated image shows how black holes bend a starry background and capture light, producing black hole silhouettes. A distinctive but hard to observe feature called a photon ring outlines the black holes.
+                                        <br><strong>NASA’s Goddard Space Flight Center; background, NASA/JPL-Caltech/UCLA</strong>
+                                    </p>
+                                </div>
+                                <div class="summary-card-text black-text">
+                                    <h2>Overview</h2>
+                                    <p>
+                                        When a star with more than eight times the Sun’s mass runs out of fuel, 
+                                        its core collapses, rebounds, and explodes as a supernova. What’s left 
+                                        behind depends on the star’s mass before the explosion. If it was near 
+                                        the threshold, it creates a city-sized, superdense neutron star. If it 
+                                        had around 20 times the Sun’s mass or more, the star’s core collapses 
+                                        into a stellar-mass black hole.
+                                    </p>
+                                    <p>
+                                        The masses of these newly born objects can range from a few to hundreds 
+                                        of times the Sun’s mass, depending on star’s mass when the supernova began. 
+                                        Stellar-mass black holes can continue to gain mass through collisions with 
+                                        stars and other black holes.
+                                    </p>
+                                    <p>
+                                        Nearly all the stellar-mass black holes observed so far have been found 
+                                        because they’re paired with stars. They likely originated as mismatched 
+                                        stars where the more massive one evolved rapidly into a black hole. 
+                                        In some cases, called X-ray binaries, the black hole pulls gas off the 
+                                        star into a disk that heats up enough to produce X-rays. Binaries have 
+                                        revealed around 50 suspected or confirmed stellar-mass black holes in 
+                                        the Milky Way, but scientists think there may be as many as 100 million 
+                                        in our galaxy alone.
+                                    </p>
+                                </div>
+                            </details>
+                        </div>
+                        <div> <!-- Summary Card for Supermassive -->
+                            <details class="summary-card bg-spacesuit-white">
+                                <summary>
+                                    <img src="/images/Supermassic_black_hole_animation.gif" alt="Supermassive Black Hole" class="summary-card-img">
+                                    <span>Supermassive</span>
+                                </summary>
+                                <div class="video-container">
+                                    <div class="video-wrapper">
+                                        <img src="/images/Supermassic_black_hole_animation.gif" alt="Supermassive Black Hole" class="zero-border-radius">
+                                    </div>
+                                    <p class="padding-x-1">
+                                        Gas glows brightly in this computer simulation of supermassive black holes only 40 orbits from merging. Models like this may eventually help scientists pinpoint real examples of these powerful binary systems.
+                                        <br><strong>NASA’s Goddard Space Flight Center/Scott Noble</strong>
+                                    </p>
+                                </div>
+                                <div class="summary-card-text black-text">
+                                    <h2>Overview</h2>
+                                    <p>
+                                        Supermassive black holes are found at the centers of most galaxies, including the Milky Way. 
+                                        They have masses ranging from hundreds of thousands to billions of times that of the Sun.
+                                    </p>
+                                    <p>
+                                        The exact formation process of supermassive black holes is still a topic of research, 
+                                        but they are thought to have formed early in the universe's history and grown over time 
+                                        by accreting mass and merging with other black holes.
+                                    </p>
+                                    <p>
+                                        Observations suggest that the growth of supermassive black holes is closely linked 
+                                        to the evolution of their host galaxies, and they may influence galaxy formation and evolution.
+                                    </p>
+                                </div>
+                            </details>
+                        </div>
+                        <div> <!-- Summary Card for Intermediate -->
+                            <details class="summary-card bg-spacesuit-white">
+                                <summary>
+                                    <img src="/images/Intermediate_black_hole-1.jpg" alt="Intermediate Black Hole" class="summary-card-img">
+                                    <span>Intermediate</span>
+                                </summary>
+                                <div class="video-container">
+                                    <div class="video-wrapper">
+                                        <img src="/images/Intermediate_black_hole-1.jpg" alt="Intermediate Black Hole" class="zero-border-radius">
+                                    </div>
+                                    <p class="padding-x-1">
+                                        This Hubble Space Telescope image identified the location of a potential intermediate-mass black hole (circled) with 50,000 times the mass of our Sun. The object is named 3XMM J215022.4−055108.
+                                        <br><strong>NASA, ESA and D. Lin (University of New Hampshire)</strong>
+                                    </p>
+                                </div>
+                                <div class="summary-card-text black-text">
+                                    <h2>Overview</h2>
+                                    <p>
+                                        Scientists are puzzled by the size gap between stellar-mass and 
+                                        supermassive black holes.
+                                    </p>
+                                    <p>
+                                        They think there should be a continuum of sizes because, over cosmic 
+                                        time, collisions between stellar-mass black holes should have created 
+                                        some intermediate-mass black holes. These should range from around 
+                                        one hundred to hundreds of thousands of times the Sun’s mass – 
+                                        or tens of thousands, depending on how supermassive black holes 
+                                        are defined. Scientists are actively hunting for examples of 
+                                        these so-called missing-link black holes. Numerous candidates 
+                                        have been identified but have proven difficult to confirm.
+                                    </p>
+                                </div>
+                            </details>
+                        </div>
+                        <div> <!-- Summary Card for Primordial -->
+                            <details class="summary-card bg-spacesuit-white">
+                                <summary>
+                                    <img src="/images/Primordial_Black_Hole_Still_1080.jpg" alt="Primordial Black Hole" class="summary-card-img">
+                                    <span>Primordial Black Hole</span>
+                                </summary>
+                                <div class="video-container">
+                                    <div class="video-wrapper">
+                                        <img src="/images/Primordial_Black_Hole_Still_1080.jpg" alt="Primordial Black Hole" class="zero-border-radius">
+                                    </div>
+                                    <p class="padding-x-1">
+                                        This artist's concept takes a fanciful approach to imagining small primordial black holes. In reality, such tiny black holes would have a difficult time forming the accretion disks that make them visible here.
+                                        <br><strong>NASA's Goddard Space Flight Center</strong>
+                                    </p>
+                                </div>
+                                <div class="summary-card-text black-text">
+                                    <h2>Overview</h2>
+                                    <p>
+                                        Scientists theorize that primordial black holes formed in the first second after 
+                                        the birth of the universe. In that moment, pockets of hot material may have been 
+                                        dense enough to form black holes, potentially with masses ranging from 100,000 
+                                        times less than a paperclip to 100,000 times more than the Sun’s. Then as the 
+                                        universe quickly expanded and cooled, the conditions for forming black holes 
+                                        this way ended.
+                                    </p>
+                                    <p>
+                                        Now, 13.8 billion years later, scientists haven’t yet found definitive proof 
+                                        these primordial black holes ever existed. It’s possible, however, that they 
+                                        could have evaporated as the cosmos aged due to quantum mechanical processes 
+                                        occurring at the edges of their event horizons. According to theoretical 
+                                        predictions, lower-mass black holes (those with less mass than a mountain) 
+                                        would evaporate more quickly than larger ones, which could mean many of 
+                                        these early black holes have completely dissipated. But more massive primordial 
+                                        black holes could still linger across the universe.
+                                    </p>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-section" id="galaxies">
+                    <h1 class="page-heading-lg white-text">Galaxies</h1>
+                    <div class="horizontal-flexbox">
+                        <div>
+                            <p>
+                                Galaxies consist of stars, planets, and vast clouds of gas and dust, 
+                                all bound together by gravity. The largest contain trillions of stars 
+                                and can be more than a million light-years across. The smallest can 
+                                contain a few thousand stars and span just a few hundred light-years. 
+                                Most large galaxies have supermassive black holes at their centers, 
+                                some with billions of times the Sun’s mass.
+                            </p>
+                            <p>
+                                Galaxies come in a variety of shapes, mostly spirals and ellipticals, 
+                                as well as those with less orderly appearances, usually dubbed irregular.
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                Most galaxies are between 10 billion and 13.6 billion years old. 
+                                Some are almost as old as the universe itself, which formed around 
+                                13.8 billion years ago. Astronomers think the youngest known galaxy 
+                                formed approximately 500 million years ago.
+                            </p>
+                            <p>
+                                Galaxies can organize into groups of about 100 or fewer members held together by their mutual gravity. 
+                                Larger structures, called clusters, may contain thousands of galaxies. 
+                                Groups and clusters can be arranged in superclusters, which are not gravitationally bound. 
+                                Superclusters, empty voids, “walls” of galaxies, 
+                                and other large-scale structures make up the cosmic web of matter in the universe.
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <a href="https://science.nasa.gov/universe/galaxies" target="_blank" class="read-more-link">
+                            <div>
+                                <h3>Learn More</h3>
+                                <div class="circle-box">&#8594;</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item-section">
+                    <h1 class="page-heading-lg black-text">Our Milky Way</h1>
+                    <div class="horizontal-flexbox">
+                        <div>
+                            <p>
+                                Our home galaxy is called the Milky Way. It’s a spiral galaxy with a disk of 
+                                stars spanning more than 100,000 light-years. Earth is located along one of 
+                                the galaxy’s spiral arms, about halfway from the center. Our solar system takes 
+                                about 240 million years to orbit the Milky Way just once.
+                            </p>
+                            <p>
+                                From our perspective on Earth, the Milky Way looks like a faint, 
+                                milky band of light arcing across the entire sky, which is how it 
+                                got its name. This feature marks the central disk of our home 
+                                galaxy seen edge on.
+                            </p>
+                            <div class="video-container">
+                                <div class="video-wrapper">
+                                    <img src="/images/Sun_in_Milky_Way-1.jpeg" alt="Milky Way Galaxy">
+                                </div>
+                                <p>
+                                    This illustration shows the Milky Way, our home galaxy.
+                                    <br><strong>NASA/JPL-Caltech</strong>
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="video-container">
+                                <div class="video-wrapper">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/V5M_grieetw?si=S2Y2iaFVcu2OBuQ7" title="How We Found Earth's Location in the Milky Way" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <p>
+                                    How We Found Earth's Location in the Milky Way: 
+                                    This video explains how astronomers determined our solar system's location in the Milky Way galaxy.
+                                    <br><strong>YouTube: The Secrets of the Universe</strong>
+                                </p>
+                            </div>
+                            <p>
+                                The Milky Way sits in a neighborhood with over 50 other galaxies called the 
+                                Local Group. Its members range in size from dwarf galaxies (smaller galaxies 
+                                with up to a few billion stars) to Andromeda, our nearest large galactic 
+                                neighbor.
+                            </p>
+                            <p>
+                                The Local Group sits just off the edge of the Virgo cluster and is part 
+                                of the Laniakea supercluster.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-section" id="galaxy-types">
+                    <h1 class="page-heading-lg black-text right-align-text">Types of Galaxies</h1>
+                    <p>
+                        Galaxies come in various shapes and sizes, and they are generally classified into four main types:
+                    </p>
+                    <div class="galaxy-explorer">
+                        <!-- Controls and filters -->
+                        <div class="galaxy-controls">
+                            <div>
+                                <button class="filter-btn active" data-filter="all">All Types</button>
+                                <button class="filter-btn" data-filter="spiral">Spiral</button>
+                                <button class="filter-btn" data-filter="elliptical">Elliptical</button>
+                                <button class="filter-btn" data-filter="irregular">Irregular</button>
+                                <button class="filter-btn" data-filter="lenticular">Lenticular</button>
+                            </div>
+                            <div class="zoom-controls">
+                                <input type="range" min="1" max="100" value="50" class="slider" id="galaxy-zoom-slider">
+                            </div>
+                        </div>
+
+                        <div class="item-section hidden-overflow-content zero-padding rounded-corners">
+                            <!-- The interactive starfield -->
+                            <div class="starfield-container" id="galaxy-map">
+                                <!-- Spiral galaxies -->
+                                <div class="galaxy-point" data-type="spiral">
+                                    <div class="galaxy-point-dot"></div>
+                                    <span class="galaxy-name">Milky Way</span>
+                                </div>
+                                <div class="galaxy-point" data-type="spiral">
+                                    <div class="galaxy-point-dot"></div>
+                                    <span class="galaxy-name">Andromeda (M31)</span>
+                                </div>
+                                <div class="galaxy-point" data-type="spiral">
+                                    <div class="galaxy-point-dot"></div>
+                                    <span class="galaxy-name">Whirlpool (M51)</span>
+                                </div>
+                                
+                                <!-- Elliptical galaxies -->
+                                <div class="galaxy-point" data-type="elliptical">
+                                    <div class="galaxy-point-dot"></div>
+                                    <span class="galaxy-name">M87</span>
+                                </div>
+                                <div class="galaxy-point" data-type="elliptical">
+                                    <div class="galaxy-point-dot"></div>
+                                    <span class="galaxy-name">M60</span>
+                                </div>
+                                
+                                <!-- Irregular galaxies -->
+                                <div class="galaxy-point" data-type="irregular">
+                                    <div class="galaxy-point-dot"></div>
+                                    <span class="galaxy-name">Large Magellanic Cloud</span>
+                                </div>
+                                <div class="galaxy-point" data-type="irregular">
+                                    <div class="galaxy-point-dot"></div>
+                                    <span class="galaxy-name">Small Magellanic Cloud</span>
+                                </div>
+                                
+                                <!-- Lenticular galaxies -->
+                                <div class="galaxy-point" data-type="lenticular">
+                                    <div class="galaxy-point-dot"></div>
+                                    <span class="galaxy-name">Sombrero Galaxy (M104)</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Galaxy info modal -->
+                        <div class="galaxy-modal" id="galaxy-modal">
+                            <div class="galaxy-modal-content">
+                                <span class="close-modal">&times;</span>
+                                <div class="galaxy-modal-header">
+                                    <h3 id="modal-galaxy-name"></h3>
+                                    <span id="modal-galaxy-type" class="galaxy-type-badge"></span>
+                                </div>
+                                <div class="galaxy-modal-body">
+                                    <div class="modal-image-container">
+                                        <img id="modal-galaxy-image" src="" alt="">
+                                    </div>
+                                    <div class="modal-info">
+                                        <p id="modal-galaxy-description" class="zero-top-margin"></p>
+                                        <table class="galaxy-data-table">
+                                            <tr>
+                                                <td>Distance from Earth:</td>
+                                                <td id="modal-galaxy-distance"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Diameter:</td>
+                                                <td id="modal-galaxy-size"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Estimated Age:</td>
+                                                <td id="modal-galaxy-age"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Contains Stars:</td>
+                                                <td id="modal-galaxy-stars"></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Educational section about galaxy types -->
+                    <div class="galaxy-types-info">
+                        <div class="galaxy-type-card"><!-- Spiral Galaxy -->
+                            <h3>Spiral Galaxies</h3>
+                            <img src="/images/spiral-galaxy-jpg.webp" alt="Spiral Galaxy">
+                            <p>Spiral galaxies have a flat, rotating disk with spiral arms and a central bulge. Our own Milky Way is a spiral galaxy. The spiral arms contain younger stars, gas, and dust, while the central bulge consists of older stars.</p>
+                        </div>
+
+                        <div class="galaxy-type-card"><!-- Elliptical Galaxy -->
+                            <h3>Elliptical Galaxies</h3>
+                            <img src="/images/elliptical-galaxy.jpg" alt="Elliptical Galaxy">
+                            <p>Elliptical galaxies have an ellipsoidal shape with no clear structure. They range from nearly spherical to very elongated shapes. They contain mostly older stars and very little gas and dust, meaning they have little new star formation.</p>
+                        </div>
+
+                        <div class="galaxy-type-card"><!-- Irregular Galaxy -->
+                            <h3>Irregular Galaxies</h3>
+                            <img src="/images/irregular-galaxy.jpg" alt="Irregular Galaxy">
+                            <p>Irregular galaxies have no definite shape or structure. They often result from gravitational interactions with other galaxies. The Magellanic Clouds are examples of irregular galaxies that orbit the Milky Way.</p>
+                        </div>
+
+                        <div class="galaxy-type-card"><!-- Lenticular Galaxy -->
+                            <h3>Lenticular Galaxies</h3>
+                            <img src="/images/lenticular-galaxy.jpg" alt="Lenticular Galaxy">
+                            <p>Lenticular galaxies have a disk shape like spiral galaxies but lack spiral arms. They're considered transitional between elliptical and spiral galaxies, containing older stars like ellipticals but with a disk structure like spirals.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-section">
+                    <h2>Active Galaxies</h2>
+                    <div class="horizontal-flexbox">
+                        <div>
+                            <p>
+                                Around 10% of known galaxies are active, which means 
+                                their centers appear more than 100 times brighter than 
+                                the combined light of their stars. They can be spiral, 
+                                elliptical, or irregular. The Milky Way is not currently 
+                                an active galaxy, although it likely experienced a burst 
+                                of activity in the past few million years.
+                            </p>
+                            <p>
+                                Astronomers think this excess energy comes from areas near the 
+                                galaxies’ central supermassive black holes, which range from 
+                                hundreds of thousands to billions of times the mass of our Sun.
+                            </p>
+                            <p>
+                                Gas and dust collect around the black hole to form an 
+                                accretion disk. The black hole’s gravity compresses and 
+                                heats the disk, which causes the material to glow across 
+                                multiple wavelengths, from infrared to X-rays.
+                            </p>
+                            <p>
+                                Infrared observations show that the black hole and its accretion disk are 
+                                embedded within a clumpy ring of cooler dust, called a torus, that may be a 
+                                few light-years across. Close to the black hole, a small fraction of the infalling 
+                                gas can be driven outward, perpendicular to the disk, as jets of particles that 
+                                move near the speed of light.
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                During the early 20th century, astronomers began classifying active galaxies 
+                                based on the distinctive characteristics and behaviors they observed. Scientists 
+                                now think viewing the centers of these galaxies at different angles – for example, 
+                                seeing directly into the torus versus seeing it from the side – produce many of the 
+                                signature traits.
+                            </p>
+                            <p>
+                                Active galaxies can also be categorized by their brightness in radio wavelengths. 
+                                Radio-loud galaxies typically emit from both the accretion disk and the jets. 
+                                Radio-quiet galaxies tend to have little-to-no emission from jets. The observed 
+                                luminosity is also thought to be another aspect of our viewing angle. Jets 
+                                directed more toward our line of sight, viewed “down the barrel,” appear brighter 
+                                and more variable than those viewed at wider angles.
+                            </p>
+                            <a href="https://science.nasa.gov/universe/galaxies/types" target="_blank" class="read-more-link">
+                                <hr>
+                                <div>
+                                    <h3>Let's Find Out More</h3>
+                                    <div class="circle-box">&#8594;</div>
+                                </div>
+                                <hr>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-section bg-spacesuit-black" id="universe-quiz">
+                    <h1 class="page-heading-lg white-text">Test Your Cosmic Knowledge</h1>
+                    <div class="quiz-container">
+                        <!-- Quiz start screen -->
+                        <div class="quiz-start-screen">
+                            <h2 class="black-text">Universe Quiz</h2>
+                            <p>How well do you know our cosmos? Test your knowledge with questions about stars, black holes, galaxies, and more!</p>
+                            <button id="start-quiz-btn" class="button-link">Begin Quiz</button>
+                        </div>
+                        
+                        <!-- Quiz questions -->
+                        <div class="quiz-questions-container" style="display: none;">
+                            <div class="quiz-header">
+                                <div class="quiz-progress">
+                                    <div class="quiz-progress-bar"></div>
+                                </div>
+                                <div class="quiz-score">Score: <span id="current-score">0</span>/<span id="questions-count">0</span></div>
+                            </div>
+                            
+                            <div class="quiz-question-box">
+                                <h3 id="question-text">Question text goes here</h3>
+                                <div class="quiz-options">
+                                    <!-- Options will be populated by JavaScript -->
+                                </div>
+                            </div>
+                            
+                            <div class="quiz-navigation">
+                                <button id="next-question-btn" class="button-link" disabled>Next Question</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Quiz results -->
+                        <div class="quiz-results" style="display: none;">
+                            <h2>Quiz Complete!</h2>
+                            <div class="results-score">
+                                <span id="final-score">0</span>/<span id="total-questions">0</span>
+                            </div>
+                            <p id="score-message">Score message will appear here</p>
+                            <div class="results-actions">
+                                <button id="retry-quiz-btn" class="button-link">Try Again</button>
+                                <button id="review-answers-btn" class="button-link">Review Answers</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="tech">
+                <div class="intro-section"> <!--INTRO-->
+                    <div>
+                        <h1>Space Technology</h1>
+                        <p>
+                            Space technology is the backbone of our exploration efforts, enabling us to 
+                            observe, study, and understand the universe. From powerful telescopes that peer 
+                            into distant galaxies to advanced spacecraft that carry humans and instruments 
+                            beyond our planet, technology plays a crucial role in expanding our knowledge.
+                        </p>
+                        <hr>
+                    </div>
+                    <div class="horizontal-flexbox">
+                        <div>
+                            <h2>Ready?<br>To explore the universe?</h2>
+                            <a href="#universe-intro" class="button-link"><h2>Let's Go</h2></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-section">
+                    <h1 class="page-heading-lg black-text">Spacecraft and Probes</h1>
+                    <div class="horizontal-flexbox">
+                        <div>
+                            <p>
+                                Spacecraft and probes are essential for exploring our solar system and beyond. 
+                                They carry instruments to gather data about planets, moons, asteroids, comets, 
+                                and the interstellar medium. These missions have provided invaluable insights into 
+                                the formation and evolution of our solar system.
+                            </p>
+                            <p>
+                                Notable missions include the Voyager probes, which have traveled beyond the 
+                                heliosphere, and the Mars rovers, which have explored the Martian surface in detail.
+                            </p>
+                            <p>
+                                Spacecraft can be crewed or uncrewed, with each type serving different purposes. 
+                                Crewed missions allow humans to conduct experiments and make real-time decisions, 
+                                while uncrewed probes can travel farther and longer without the limitations of life support.
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                Spacecraft and probes are equipped with a variety of instruments, including cameras, spectrometers, and particle detectors. 
+                                These tools allow scientists to analyze the composition of celestial bodies, study their atmospheres, and capture stunning images of distant worlds.
+                            </p>
+                            <p>
+                                The data collected by these missions has revolutionized our understanding of the solar system, revealing complex geological processes, atmospheric dynamics, and the potential for life beyond Earth.
+                                <br>
+                                As we continue to explore the cosmos, spacecraft and probes will remain at the forefront of our quest for knowledge, pushing the boundaries of what we know about the universe.
+                            </p>
+                            <a href="https://science.nasa.gov/spacecraft" target="_blank" class="read-more-link">
+                                <hr>
+                                <div>
+                                    <h3>Learn More</h3>
+                                    <div class="circle-box">&#8594;</div>
+                                </div>
+                                <hr>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical-flexbox zero-padding">
+                    <ul class="accordion">
+                        <li>
+                            <input type="checkbox" name="accordion" id="first" class="accordion-input">
+                            <label for="first" class="parker-solar-probe-bg">Parker Solar Probe</label>
+                            <div class="accordion-content">
+                                <div class="horizontal-flexbox padding-x-4">
+                                    <div>
+                                        <p class="line-height-2">
+                                            On a mission to “touch the Sun,” NASA's Parker Solar Probe became the first spacecraft 
+                                            to fly through the corona – the Sun’s upper atmosphere – in 2021. With every orbit 
+                                            bringing it closer, the probe faces brutal heat and radiation to provide humanity 
+                                            with unprecedented observations, visiting the only star we can study up close.
+                                        </p>
+                                        <div class="horizontal-flexbox">
+                                            <div>
+                                                <div class="video-container">
+                                                    <div class="video-wrapper">
+                                                        <img src="/images/Parker_Swingby-1.jpg" alt="Parker Solar Probe">
+                                                    </div>
+                                                    <p class="white-text">
+                                                        Parker Solar Probe: Touching the Sun - This video explains the mission and goals of the Parker Solar Probe.
+                                                        <br><strong>NASA Goddard</strong>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="mission-data-table">
+                                            <div>
+                                                 <span class="mission-data-label">Type</span>
+                                                 <span class="mission-data-value"><strong>Orbiter</strong></span>
+                                            </div>
+                                            <div>
+                                                 <span class="mission-data-label">Launch</span>
+                                                 <span class="mission-data-value"><strong>August 12, 2018</strong></span>
+                                            </div>
+                                            <div>
+                                                 <span class="mission-data-label">Target</span>
+                                                 <span class="mission-data-value"><strong>Sun</strong></span>
+                                            </div>
+                                            <div>
+                                                 <span class="mission-data-label">Status</span>
+                                                 <span class="mission-data-value"><strong>Primary Mission in Progress</strong></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="accordion" id="second" class="accordion-input">
+                            <label for="second" class="solar-orbiter-bg">Solar Orbiter</label>
+                            <div class="accordion-content">
+                                <div class="horizontal-flexbox padding-x-4">
+                                    <div>
+                                        <p class="line-height-2">
+                                            An international cooperative mission between the European Space Agency (ESA) and NASA, 
+                                            Solar Orbiter is a Sun-observing satellite with 10 science instruments, all designed 
+                                            to provide unprecedented insight into how our local star 'works.'
+                                        </p>
+                                        <div class="horizontal-flexbox">
+                                            <div>
+                                                <div class="video-container">
+                                                    <div class="video-wrapper">
+                                                        <img src="/images/solar-orbiter-0-jpg.webp" alt="Solar Orbiter">
+                                                    </div>
+                                                    <p class="white-text">
+                                                        Solar Orbiter: Exploring the Sun - This video explains the mission and goals of the Solar Orbiter.
+                                                        <br><strong>NASA Goddard</strong>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="mission-data-table">
+                                            <div>
+                                                 <span class="mission-data-label">Type</span>
+                                                 <span class="mission-data-value"><strong>Orbiter</strong></span>
+                                            </div>
+                                            <div>
+                                                 <span class="mission-data-label">Launch</span>
+                                                 <span class="mission-data-value"><strong>Feb. 9, 2020</strong></span>
+                                            </div>
+                                            <div>
+                                                 <span class="mission-data-label">Target</span>
+                                                 <span class="mission-data-value"><strong>Sun</strong></span>
+                                            </div>
+                                            <div>
+                                                 <span class="mission-data-label">Objective</span>
+                                                 <span class="mission-data-value"><strong>Take close-up images of the Sun, observe solar wind and the Sun's polar regions</strong></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="accordion" id="third" class="accordion-input">
+                            <label for="third" class="voyager-bg">Voyager 1</label>
+                            <div class="accordion-content">
+                                <div class="horizontal-flexbox padding-x-4">
+                                    <div>
+                                        <p class="line-height-2">
+                                            Voyager 1 and its twin Voyager 2 are the only spacecraft ever to operate outside the heliosphere, 
+                                            the protective bubble of particles and magnetic fields generated by the Sun. Voyager 1 reached 
+                                            the interstellar boundary in 2012, while Voyager 2 (traveling slower and in a different direction 
+                                            than its twin) reached it in 2018.
+                                        </p>
+                                        <div class="horizontal-flexbox">
+                                            <div>
+                                                <div class="video-container">
+                                                    <div class="video-wrapper">
+                                                        <img src="/images/voyager.jpg" alt="Voyager 1">
+                                                    </div>
+                                                    <p class="white-text">
+                                                        Voyager 1: Journey into Interstellar Space - This video explains the mission and goals of Voyager 1.
+                                                        <br><strong>NASA Goddard</strong>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="mission-data-table">
+                                            <div>
+                                                 <span class="mission-data-label">Mission Type</span>
+                                                 <span class="mission-data-value"><strong>Multiple Flybys</strong></span>
+                                            </div>
+                                            <div>
+                                                 <span class="mission-data-label">Launch</span>
+                                                 <span class="mission-data-value"><strong>1977</strong></span>
+                                            </div>
+                                            <div>
+                                                 <span class="mission-data-label">Science Targets</span>
+                                                 <span class="mission-data-value"><strong>Outer Solar System, Interstellar Space</strong></span>
+                                            </div>
+                                            <div>
+                                                 <span class="mission-data-label">Status</span>
+                                                 <span class="mission-data-value"><strong>Extended Mission</strong></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item-section">
+                    <h1 class="page-heading-lg black-text">Telescopes</h1>
+                    <div class="horizontal-container">
+                        <div>
+                            <p>
+                                Telescopes are our eyes into the universe, allowing us to observe celestial objects 
+                                across vast distances. They come in various types, including optical telescopes that 
+                                capture visible light and radio telescopes that detect radio waves emitted by distant 
+                                objects.
+                            </p>
+                            <p>
+                                Space-based telescopes, like the Hubble Space Telescope and the James Webb Space Telescope, 
+                                have revolutionized our understanding of the cosmos by providing clear images free from Earth's atmosphere.
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                These instruments have enabled groundbreaking discoveries, such as the detection of exoplanets, 
+                                the observation of distant galaxies, and the study of cosmic phenomena like black holes and supernovae.
+                            </p>
+                            <p>
+                                Telescopes continue to play a crucial role in advancing our knowledge of the universe, 
+                                helping us answer fundamental questions about its origins, evolution, and the potential for life beyond Earth.
+                            </p>
+                            <a href="https://science.nasa.gov/space-telescopes" target="_blank" class="read-more-link">
+                                <hr>
+                                <div>
+                                    <h3>Learn More</h3>
+                                    <div class="circle-box">&#8594;</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="telescope-timeline-explorer">
+                        <div class="timeline-header">
+                            <h2>The Evolution of Space Telescopes</h2>
+                            <div class="timeline-controls">
+                                <button class="era-selector active" data-era="all">All Eras</button>
+                                <button class="era-selector" data-era="early">Early Telescopes</button>
+                                <button class="era-selector" data-era="modern">Modern Era</button>
+                                <button class="era-selector" data-era="future">Future Missions</button>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-container">
+                            <div class="timeline-track">
+                                <div class="timeline-line"></div>
+                                <!-- Time markers -->
+                                <div class="time-marker" data-year="1970">1970</div>
+                                <div class="time-marker" data-year="1980">1980</div>
+                                <div class="time-marker" data-year="1990">1990</div>
+                                <div class="time-marker" data-year="2000">2000</div>
+                                <div class="time-marker" data-year="2010">2010</div>
+                                <div class="time-marker" data-year="2020">2020</div>
+                                <div class="time-marker" data-year="2030">2030</div>
+                                
+                                <!-- Telescope nodes -->
+                                <div class="telescope-node" data-year="1970" data-era="early" data-telescope="uhuru">
+                                    <div class="node-dot past"></div>
+                                    <div class="node-preview">
+                                        <img src="/images/X-Ray_Explorer_Satellite.jpg" alt="Uhuru X-ray Observatory">
+                                        <span>1970: Uhuru X-ray Observatory</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="telescope-node" data-year="1975" data-era="early" data-telescope="viking">
+                                    <div class="node-dot past"></div>
+                                    <div class="node-preview">
+                                        <img src="/images/500px-Viking_spacecraft.jpg" alt="Viking 1 Orbiter">
+                                        <span>1975: Viking 1 Orbiter</span>
+                                    </div>
+                                </div>
+
+                                <div class="telescope-node" data-year="1983" data-era="early" data-telescope="iras">
+                                    <div class="node-dot past"></div>
+                                    <div class="node-preview">
+                                        <img src="/images/IRAS.jpeg" alt="IRAS Space Telescope">
+                                        <span>1983: IRAS Space Telescope</span>
+                                    </div>
+                                </div>
+
+                                <div class="telescope-node" data-year="1990" data-era="modern" data-telescope="hubble">
+                                    <div class="node-dot"></div>
+                                    <div class="node-preview">
+                                        <img src="/images/hubble-space-telescope.jpg" alt="Hubble Space Telescope">
+                                        <span>1990: Hubble Space Telescope</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="telescope-node" data-year="1999" data-era="modern" data-telescope="chandra">
+                                    <div class="node-dot"></div>
+                                    <div class="node-preview">
+                                        <img src="/images/Chandra_artist_illustration.jpg" alt="Chandra X-ray Observatory">
+                                        <span>1999: Chandra X-ray Observatory</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="telescope-node" data-year="2003" data-era="modern" data-telescope="spitzer">
+                                    <div class="node-dot"></div>
+                                    <div class="node-preview">
+                                        <img src="/images/spitzer20171013-768.jpg" alt="Spitzer Space Telescope">
+                                        <span>2003: Spitzer Space Telescope</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="telescope-node" data-year="2009" data-era="modern" data-telescope="kepler">
+                                    <div class="node-dot"></div>
+                                    <div class="node-preview">
+                                        <img src="/images/PIA18904~large.jpg" alt="Kepler Space Telescope">
+                                        <span>2009: Kepler Space Telescope</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="telescope-node" data-year="2021" data-era="modern" data-telescope="jwst">
+                                    <div class="node-dot"></div>
+                                    <div class="node-preview">
+                                        <img src="/images/jwst_artist_concept_0.jpg" alt="James Webb Space Telescope">
+                                        <span>2021: James Webb Space Telescope</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="telescope-node" data-year="2025" data-era="future" data-telescope="roman">
+                                    <div class="node-dot future"></div>
+                                    <div class="node-preview">
+                                        <img src="/images/nancy-grace.jpg" alt="Nancy Grace Roman Space Telescope">
+                                        <span>2025: Nancy Grace Roman Space Telescope (Planned)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="telescope-detail-panel">
+                            <div class="telescope-detail-content" id="telescope-details">
+                                <!-- Telescope details will be displayed here when a node is clicked -->
+                                <div class="select-prompt">
+                                    <img src="/images/telescope-icon.png" alt="Telescope icon" class="prompt-icon">
+                                    <h3>Select a telescope on the timeline to learn more</h3>
+                                    <p>Explore the evolution of space telescopes from the first orbital observatories to future missions</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Follow me on social media <br> for the latest news and updates.</p>
             <nav>
                 <ul>
-                    <li class="header_nav_item"><button title="Home" id="homeBtn">Home</a></li>
-                    <li class="header_nav_item"><button title="Planets Overview" id="page1Btn">Planets Overview</a></li>
-                    <li class="header_nav_item"><button title="Fun Facts & Space Trivia" id="page2Btn">Fun Facts &amp; Space Trivia</a></li>
-                    <li class="header_nav_item"><button title="Gravity & Orbits" id="page3Btn">Gravity &amp; Orbits</a></li>
-                    <li class="header_nav_item"><button title="Space Technology & Exploration" id="page4Btn">Space Technology &amp; Exploration</a></li>
+                    <li class="icon icon-instagram"><a title="Instagram" href="https://www.instagram.com/ng._mq?igsh=dnBlejA4dTNvc3Aw&utm_source=qr" target="_blank" aria-label="Instagram"></a></li>
+                    <li class="icon icon-facebook"><a title="Facebook" href="https://www.facebook.com/share/1V1HvSQtXN/?mibextid=wwXIfr" target="_blank" aria-label="Facebook"></a></li>
+                    <li class="icon icon-email"><a title="Email" href="mailto:ngminhquan.2004@gmail.com" aria-label="Email"></a></li>
                 </ul>
             </nav>
-        </aside>
-    </header>
-    <header class ="desktop-layout">
-        <div class="header-bar">
-            <nav>
-                <ul>
-                    <li class="header_nav_item"><button title="Home" href="#home">Home</button></li>
-                    <li class="header_nav_item"><button title="Planets Overview" href="#planets">Planets Overview</button></li>
-                    <li class="header_nav_item"><button title="Fun Facts & Space Trivia" href="#facts">Fun Facts &amp; Space Trivia</button></li>
-                    <li class="header_nav_item"><button title="Gravity & Orbits" href="#gravity">Gravity &amp; Orbits</button></li>
-                    <li class="header_nav_item"><button title="Space Technology & Exploration" href="#tech">Space Technology &amp; Exploration</button></li>
-                </ul>
-            </nav>
-            <div class="header-logo">
-                <a href="#home" class="header-title">
-                    <img src="/images/galaxy.png" alt="GASI Logo">
-                </a>
-            </div>
-        </div>
-    </header>
-    <div id="overlay"></div>
-    <main>
-        <section id="home">
-            <h1>Welcome to GASI</h1>
-            <p>Explore the wonders of space and learn about our solar system.</p>
-        </section>
-        <section id="planets">
-            <h1>Planets Overview</h1>
-            <p>Learn about the planets in our solar system, their unique features, and how they orbit the Sun.</p>
-        </section>
-        <section id="facts">
-            <h1>Fun Facts &amp; Space Trivia</h1>
-            <ul>
-                <li>Did you know Jupiter is the largest planet in our solar system?</li>
-                <li>Venus spins in the opposite direction to most planets.</li>
-                <li>Neutron stars can spin at a rate of 600 times per second!</li>
-            </ul>
-        </section>
-        <section id="gravity">
-            <h1>Gravity &amp; Orbits</h1>
-            <p>Gravity keeps planets in orbit around the Sun and governs the motion of objects in space.</p>
-        </section>
-        <section id="tech">
-            <h1>Space Technology &amp; Exploration</h1>
-            <p>Discover how technology like telescopes, satellites, and rockets help us explore the universe.</p>
-        </section>
-    </main>
-    <footer>
-        <nav>
-            <ul>
-                <li class="icon icon-instagram"><a title="Instagram" href="https://www.instagram.com/ng._mq?igsh=dnBlejA4dTNvc3Aw&utm_source=qr" target="_blank" aria-label="Instagram"></a></li>
-                <li class="icon icon-facebook"><a title="Facebook" href="https://www.facebook.com/share/1V1HvSQtXN/?mibextid=wwXIfr" target="_blank" aria-label="Facebook"></a></li>
-                <li class="icon icon-email"><a title="Email" href="mailto:ngminhquan.2004@gmail.com" aria-label="Email"></a></li>
-            </ul>
-        </nav>
-        <p>&copy; 2025 Copyright GASI. All Rights Reserved</p>
-    </footer>
+            <p>&copy; 2025 GASI. All Rights Reserved</p>
+            <p>Created by Nguyen Minh Quan (NYP)</p>
+        </footer>
+    </div>
 </body>
 </html>
